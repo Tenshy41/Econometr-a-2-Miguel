@@ -675,7 +675,7 @@ test_exog = d1.iloc[-n_test:]
 modelo_backtest = SARIMAX(
     train_serie,
     exog=train_exog,
-    order=(0, 1, 1),
+    order=(0, 1, 0),
     seasonal_order=(0, 0, 1, 12),
     trend="n",
     enforce_stationarity=False,
